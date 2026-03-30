@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Switcher",
+  "version": "2.0",
+  "description": "Switch between tabs quickly using customizable keyboard shortcuts.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "quick-switch": {
+      "suggested_key": {
+        "default": "Alt+1"
+      },
+      "description": "Quick Switch: Toggle between the last 2 recently used tabs"
+    },
+    "normal-switch-backward": {
+      "suggested_key": {
+        "default": "Alt+W"
+      },
+      "description": "Normal Switch Backward: Move to the previous tab in tab order"
+    },
+    "normal-switch-forward": {
+      "suggested_key": {
+        "default": "Alt+Shift+W"
+      },
+      "description": "Normal Switch Forward: Move to the next tab in tab order"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": false,
+    "open_in_tab": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tab-switcher@zen.browser",
+      "strict_min_version": "109.0"
+    }
+  }
+}

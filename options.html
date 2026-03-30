@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Switcher</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Tab Switcher</h1>
+    <p class="subtitle">Active keyboard shortcuts</p>
+
+    <div class="shortcut-list">
+      <div class="shortcut-row">
+        <div class="shortcut-info">
+          <span class="shortcut-name">Quick Switch</span>
+          <span class="shortcut-desc">Cycle between recently used tabs</span>
+        </div>
+        <div class="shortcut-keys" id="keys-quick-switch">—</div>
+      </div>
+
+      <div class="shortcut-row">
+        <div class="shortcut-info">
+          <span class="shortcut-name">Switch Backward</span>
+          <span class="shortcut-desc">Previous tab in order</span>
+        </div>
+        <div class="shortcut-keys" id="keys-normal-switch-backward">—</div>
+      </div>
+
+      <div class="shortcut-row">
+        <div class="shortcut-info">
+          <span class="shortcut-name">Switch Forward</span>
+          <span class="shortcut-desc">Next tab in order</span>
+        </div>
+        <div class="shortcut-keys" id="keys-normal-switch-forward">—</div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h2 class="section-title">Settings</h2>
+
+      <div class="setting-row">
+        <div class="setting-top">
+          <label for="cycle-time" class="setting-name">Cycle timeout</label>
+          <span class="setting-value" id="cycle-value">800 ms</span>
+        </div>
+        <input type="range" id="cycle-time" class="slider" min="200" max="3000" step="50" value="800" />
+        <span class="setting-desc">Time before the quick-switch session ends after your last keypress</span>
+      </div>
+
+      <div class="save-row">
+        <span class="save-status" id="save-status"></span>
+        <button id="save-btn" class="save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

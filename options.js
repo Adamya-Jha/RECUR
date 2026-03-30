@@ -14,11 +14,11 @@ const DEFAULT_CYCLE_TIME = 800;
 
 function renderKeys(shortcutStr) {
   if (!shortcutStr) {
-    const el = document.createElement("span");
-    el.className = "unbound-pill";
-    el.textContent = "Not set";
+    const element = document.createElement("span");
+    element.className = "unbound-pill";
+    element.textContent = "Not set";
     const frag = document.createDocumentFragment();
-    frag.appendChild(el);
+    frag.appendChild(element);
     return frag;
   }
 

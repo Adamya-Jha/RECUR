@@ -1,13 +1,13 @@
-# Zen Tab Switcher
+# Tab Switcher for Firefox based browsers
 
-A fast, customizable WebExtension for Zen Browser and Firefox that allows you to quickly cycle through your recently used tabs using keyboard shortcuts, just like `Alt+Tab` on Windows or `Cmd+Tab` on macOS.
+A fast, customizable WebExtension for Zen Browser and Firefox that lets you quickly cycle through your recently used tabs using keyboard shortcuts—just like `Alt+Tab` on Windows or `Cmd+Tab` on macOS.
 
 ## Features
-- **Quick Switch:** Rapidly toggle back and forth between your most recently used tabs. Cycle through up to 4 recent tabs by pressing the shortcut key multiple times.
-- **Normal Switch:** Move forward and backward through your tabs in the visual order they appear on your tab bar.
-- **Customizable Shortcuts:** Manage your shortcuts directly from the browser's native extensions page.
-- **Configurable Cycle Timeout:** Set exactly how much time you have to press the shortcut key again to continue cycling through your tab history.
-- **Native UI:** Clean, minimalist settings page designed to blend in seamlessly with modern browsers like Zen Browser.
+- **Quick Switch:** Rapidly toggle between your most recently used tabs. Cycle through up to 4 recent tabs by pressing the shortcut key multiple times.
+- **Normal Switch:** Move forward and backward through tabs in the order they appear on your tab bar.
+- **Customizable Shortcuts:** Manage shortcuts directly from the browser’s native extensions shortcut settings.
+- **Configurable Cycle Timeout:** Control how long you have to press the shortcut again to continue cycling.
+- **Native UI:** Clean, minimalist settings page designed to blend seamlessly with modern browsers like Zen Browser.
 
 ## Default Shortcuts
 - **Quick Switch:** `Alt+1`
@@ -18,6 +18,12 @@ A fast, customizable WebExtension for Zen Browser and Firefox that allows you to
 1. Download or clone this repository.
 2. Open your browser and navigate to `about:debugging#/runtime/this-firefox`.
 3. Click on **"Load Temporary Add-on..."**
-4. Select the `manifest.json` file from the downloaded folder.
+4. Select the `manifest.json` file from the project folder.
 
-To customize your shortcuts, go to your browser's Add-ons manager (`about:addons`), click the gear icon, and select "Manage Extension Shortcuts."
+To customize shortcuts:
+- Go to `about:addons`
+- Click the gear icon ⚙️
+- Select **"Manage Extension Shortcuts"**
+
+## Inspiration
+Inspired by Google’s CLUT, reimagined for Firefox and Zen Browser with a focus on speed, simplicity, and customization.

@@ -1,8 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Tab Switcher",
+  "name": "RECUR",
   "version": "2.0",
   "description": "Switch between tabs quickly using customizable keyboard shortcuts.",
+  "author": "Adamya Jha",
+  "homepage_url": "https://github.com/Adamya-Jha/RECUR",
   "permissions": [
     "tabs",
     "storage"
@@ -30,6 +32,19 @@
       "description": "Normal Switch Forward: Move to the next tab in tab order"
     }
   },
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png",
+    "128": "RECUR.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icon48.png",
+      "96": "icon96.png"
+    },
+    "default_title": "RECUR",
+    "default_area": "navbar"
+  },
   "options_ui": {
     "page": "options.html",
     "browser_style": false,
@@ -38,7 +53,11 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "tab-switcher@zen.browser",
-      "strict_min_version": "109.0"
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
     }
   }
 }

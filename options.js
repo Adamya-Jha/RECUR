@@ -1,7 +1,3 @@
-// ============================================================
-// Tab Switcher — Options Page Script
-// ============================================================
-
 const COMMAND_IDS = {
   "quick-switch": "keys-quick-switch",
   "normal-switch-backward": "keys-normal-switch-backward",
@@ -69,7 +65,6 @@ const cycleValue = document.getElementById("cycle-value");
 const saveBtn = document.getElementById("save-btn");
 const saveStatus = document.getElementById("save-status");
 
-// Update the displayed value as the slider moves
 cycleInput.addEventListener("input", () => {
   cycleValue.textContent = cycleInput.value + " ms";
 });
@@ -84,15 +79,11 @@ async function loadSettings() {
 saveBtn.addEventListener("click", async () => {
   const value = parseInt(cycleInput.value, 10);
   await browser.storage.local.set({ cycleTimeoutMs: value });
-
-  // Notify background script to pick up the new value
+  // notify background script to reload the new value immediately
   browser.runtime.sendMessage({ action: "reload_settings" });
-
-  // Show confirmation
   saveStatus.textContent = "Saved ✓";
   setTimeout(() => { saveStatus.textContent = ""; }, 1500);
 });
 
-// --- Init ---
 loadShortcuts();
 loadSettings();

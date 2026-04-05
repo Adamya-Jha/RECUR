@@ -1,4 +1,4 @@
-# Tab Switcher for Firefox based browsers
+# RECUR for Firefox based browsers
 
 A fast, customizable WebExtension for Zen Browser and Firefox that lets you quickly cycle through your recently used tabs using keyboard shortcuts—just like `Alt+Tab` on Windows or `Cmd+Tab` on macOS.
 
@@ -26,4 +26,4 @@ To customize shortcuts:
 - Select **"Manage Extension Shortcuts"**
 
 ## Inspiration
-Inspired by Google’s CLUT, reimagined for Firefox and Zen Browser with a focus on speed, simplicity, and customization.
+Inspired by CLUT (Cycle Last Used Tabs), designed for Firefox and Zen Browser for a snappy user experience.
